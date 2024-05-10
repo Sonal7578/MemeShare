@@ -1,6 +1,7 @@
 package com.example.memeshare
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,4 +18,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
     }
+
+    fun shareMeme(view: View) {}
+    fun nextMeme(view: View) {}
 }
