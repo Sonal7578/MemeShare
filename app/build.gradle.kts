@@ -48,5 +48,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.google.android.gms:play-services-cronet:18.0.1")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
 }
