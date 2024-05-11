@@ -2,6 +2,7 @@ package com.example.memeshare
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -35,9 +36,11 @@ class MainActivity : AppCompatActivity() {
             Request.Method.GET, url, null,
             Response.Listener<JSONObject> { response ->
                 // Handle the JSON response here
+                val url = response.getString("url")
             },
             Response.ErrorListener {
                 // Handle errors here
+                Toast.makeText(this, "Something went wrong", Toast.LENGTH_SHORT).show()
             })
 
         // Add the request to the RequestQueue.
